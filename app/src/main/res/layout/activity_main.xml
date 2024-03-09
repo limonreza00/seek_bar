@@ -14,8 +14,9 @@
         android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:max="20"
-        android:progressTint="#AEEA00"
-        android:thumbTint="#0091EA"/>
+        android:progressTint="#2962FF"
+        android:progress="5"
+        android:thumbTint="#64DD17"/>
 
     <TextView
         android:id="@+id/display"
