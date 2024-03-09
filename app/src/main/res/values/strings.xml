@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Seek Bar</string>
+    <string name="volume">Volume : %d / %d</string>
 </resources>

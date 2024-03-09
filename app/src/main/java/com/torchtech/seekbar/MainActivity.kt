@@ -21,10 +21,12 @@ class MainActivity : AppCompatActivity() {
         val seekBar = findViewById<SeekBar>(R.id.seekBar)
         val display =findViewById<TextView>(R.id.display)
 
-
+        display.text = getString(R.string.volume, seekBar.progress, seekBar.max)
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                display.text ="Volume : $progress / 20"
+                if (seekBar != null) {
+                    display.text = getString(R.string.volume, progress, seekBar.max)
+                }
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
